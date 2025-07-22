@@ -36,6 +36,9 @@ app.post("/students", (req, res) => {
   res.status(201).json(newStudent);
 });
 
+app.get("/murod", (req, res) => {
+   res.send("salom");    
+});
 
 app.get("/students", (req, res) => {
   const { classname, coursename } = req.query;
